@@ -13,11 +13,14 @@
 	let userAnswers = $state<Map<string, number>>(new Map());
 	let showResults = $state(false);
 	let progressData: { answers: UserAnswer[]; completions: ExerciseCompletion[]; collections: CollectionProgress[] } | null = $state(null);
+	let currentExerciseId = $state(exercise.id);
 
 	// Subscribe to progress store to get existing answers
 	progressStore.subscribe(data => {
 		progressData = data;
-		loadExerciseAnswers();
+		if (data) {
+			loadExerciseAnswers();
+		}
 	});
 
 	// Load answers for the current exercise
@@ -32,12 +35,15 @@
 		} else {
 			userAnswers = new Map();
 		}
-		showResults = false; // Reset results when switching exercises
 	}
 
 	// Reset state when exercise changes
 	$effect(() => {
-		loadExerciseAnswers();
+		if (currentExerciseId !== exercise.id) {
+			currentExerciseId = exercise.id;
+			showResults = false;
+			loadExerciseAnswers();
+		}
 	});
 
 	function handleAnswerSelect(questionId: string, answer: number) {
