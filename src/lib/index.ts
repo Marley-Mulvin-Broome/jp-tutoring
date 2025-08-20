@@ -9,3 +9,4 @@ export { default as DebugPanel } from './components/DebugPanel.svelte';
 export * from './types';
 export * from './data/exercises';
 export * from './stores/progress';
+export * from './stores/storage';

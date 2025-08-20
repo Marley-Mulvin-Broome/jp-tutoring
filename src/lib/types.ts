@@ -45,3 +45,53 @@ export interface CollectionProgress {
 	overallScore: number;
 	lastAccessed?: Date;
 }
+
+// Verb Conjugation Game Types
+export interface VerbConjugation {
+	type: string;
+	text: string;
+	furigana: string;
+}
+
+export interface Verb {
+	lemma: string;
+	furigana: string;
+	type: string;
+	conjugations: VerbConjugation[];
+	meaning?: string;
+	kanji?: string;
+	kana?: string;
+}
+
+export interface VerbGameSettings {
+	targetForms: string[];
+	numberOfQuestions: number;
+}
+
+export interface VerbQuestion {
+	id: string;
+	verb: Verb;
+	targetForm: string;
+	correctAnswer: string;
+}
+
+export interface VerbGameAnswer {
+	questionId: string;
+	userAnswer: string;
+	correctAnswer: string;
+	isCorrect: boolean;
+	verb: Verb;
+	targetForm: string;
+	question: VerbQuestion;
+}
+
+export interface VerbGameSession {
+	settings: VerbGameSettings;
+	questions: VerbQuestion[];
+	answers: VerbGameAnswer[];
+	currentQuestionIndex: number;
+	isComplete: boolean;
+	score: number;
+	startTime: number;
+	endTime?: number;
+}

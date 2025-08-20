@@ -1,5 +1,7 @@
 import { writable } from 'svelte/store';
 import type { UserAnswer, ExerciseCompletion, CollectionProgress } from '../types';
+import type { StorageInterface } from './storage';
+import { LocalStorageAdapter } from './storage';
 
 const STORAGE_KEY = 'jp-tutoring-progress';
 
@@ -9,19 +11,20 @@ interface StorageData {
 	collections: CollectionProgress[];
 }
 
-function createProgressStore() {
-	// Initialize with data from localStorage if available
-	const initialData: StorageData = typeof window !== 'undefined' 
-		? JSON.parse(localStorage.getItem(STORAGE_KEY) || '{"answers": [], "completions": [], "collections": []}')
-		: { answers: [], completions: [], collections: [] };
+function createProgressStore(storageAdapter: StorageInterface = new LocalStorageAdapter()) {
+	// Initialize with data from storage if available
+	const initialData: StorageData = (() => {
+		const stored = storageAdapter.getItem(STORAGE_KEY);
+		return stored 
+			? JSON.parse(stored) 
+			: { answers: [], completions: [], collections: [] };
+	})();
 
 	const { subscribe, set, update } = writable<StorageData>(initialData);
 
-	// Save to localStorage whenever the store updates
+	// Save to storage whenever the store updates
 	function saveToStorage(data: StorageData) {
-		if (typeof window !== 'undefined') {
-			localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-		}
+		storageAdapter.setItem(STORAGE_KEY, JSON.stringify(data));
 	}
 
 	return {
@@ -123,3 +126,6 @@ function createProgressStore() {
 }
 
 export const progressStore = createProgressStore();
+
+// Export the factory function for testing
+export { createProgressStore };

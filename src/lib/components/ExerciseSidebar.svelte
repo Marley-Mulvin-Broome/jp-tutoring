@@ -64,13 +64,13 @@
 	let completedExercises = $derived(exercises.filter(e => isExerciseCompleted(e.id)).length);
 </script>
 
-<div class={`bg-white border-r border-gray-200 h-full overflow-y-auto ${classes || ''}`} {...rest}>
-	<div class="p-4 border-b border-gray-200">
+<div class={`bg-white border-r border-gray-200 h-full flex flex-col ${classes || ''}`} data-testid="exercise-sidebar" {...rest}>
+	<div class="p-4 border-b border-gray-200 flex-shrink-0">
 		<h2 class="text-xl font-bold text-gray-900">読解練習</h2>
 		<p class="text-sm text-gray-600 mt-1">練習問題を選んでください</p>
 	</div>
 
-	<nav class="p-2">
+	<nav class="p-2 flex-1 overflow-y-auto">
 		<ul class="space-y-1">
 			{#each exercises as exercise (exercise.id)}
 				{@const progress = getExerciseProgress(exercise.id)}
@@ -114,7 +114,7 @@
 	</nav>
 
 	<!-- Progress summary -->
-	<div class="mt-auto p-4 border-t border-gray-200">
+	<div class="p-4 border-t border-gray-200 flex-shrink-0">
 		<div class="text-sm text-gray-600">
 			<div class="flex justify-between mb-2">
 				<span>全体の進捗</span>

@@ -5,6 +5,7 @@
 	import ExerciseViewer from '$lib/components/ExerciseViewer.svelte';
 	import DebugPanel from '$lib/components/DebugPanel.svelte';
 	import { goto } from '$app/navigation';
+	import { dev } from '$app/environment';
 
 	let collectionId = $derived($page.params.collection);
 	let collection = $derived(getCollectionById(collectionId));
@@ -73,8 +74,8 @@
 			<DebugPanel {showDebug} class="border-b" />
 		{/if}
 
-		<!-- Header with back button -->
-		<div class="bg-white border-b border-gray-200 px-4 py-3">
+		<!-- Header with back button - STICKY -->
+		<div class="sticky top-0 z-40 bg-white border-b border-gray-200 px-4 py-3 shadow-sm">
 			<div class="flex items-center">
 				<button
 					class="mr-4 p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
@@ -92,9 +93,9 @@
 			</div>
 		</div>
 
-		<div class="flex flex-1">
-			<!-- Sidebar -->
-			<div class="w-80 flex-shrink-0">
+		<div class="flex flex-1 relative">
+			<!-- Sidebar - STICKY -->
+			<div class="w-80 flex-shrink-0 sticky top-[73px] h-[calc(100vh-73px)] z-30">
 				<ExerciseSidebar 
 					{exercises} 
 					{selectedExerciseId}
@@ -103,7 +104,7 @@
 			</div>
 
 			<!-- Main Content -->
-			<div class="flex-1 overflow-y-auto bg-gray-50">
+			<div class="flex-1 overflow-y-auto bg-gray-50 relative">
 				{#if selectedExercise}
 					<ExerciseViewer exercise={selectedExercise} />
 				{:else if exercises.length === 0}
@@ -127,7 +128,10 @@
 						<div class="text-center">
 							<h2 class="text-2xl font-semibold text-gray-900 mb-2">練習問題を選んでください</h2>
 							<p class="text-gray-600">左のサイドバーから読解練習を選択してください。</p>
-							<p class="text-xs text-gray-400 mt-4">開発用: Ctrl+D でデバッグパネルを表示</p>
+
+							{#if dev}
+								<p class="text-xs text-gray-400 mt-4">開発用: Ctrl+D でデバッグパネルを表示</p>
+							{/if}
 						</div>
 					</div>
 				{/if}

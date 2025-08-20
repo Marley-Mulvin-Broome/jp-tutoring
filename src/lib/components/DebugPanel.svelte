@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
 	import { progressStore } from '$lib/stores/progress';
 	import type { ComponentBaseProps, UserAnswer, ExerciseCompletion, CollectionProgress } from '$lib/types';
 
@@ -19,7 +20,7 @@
 	}
 </script>
 
-{#if showDebug && progressData}
+{#if showDebug && progressData && dev}
 	<div class={`bg-gray-100 border border-gray-300 rounded-lg p-4 text-xs ${classes || ''}`} {...rest}>
 		<div class="flex justify-between items-center mb-2">
 			<h4 class="font-semibold text-gray-700">Debug: Progress Data</h4>

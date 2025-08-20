@@ -1,0 +1,1919 @@
+{
+    "する": {
+        "lemma": "する",
+        "furigana": "する",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "しない",
+                "furigana": "しない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "しません",
+                "furigana": "しません"
+            },
+            {
+                "type": "past-plain",
+                "text": "した",
+                "furigana": "した"
+            },
+            {
+                "type": "past-polite",
+                "text": "しました",
+                "furigana": "しました"
+            },
+            {
+                "type": "te-form",
+                "text": "して",
+                "furigana": "して"
+            },
+            {
+                "type": "potential",
+                "text": "できる",
+                "furigana": "できる"
+            },
+            {
+                "type": "passive",
+                "text": "される",
+                "furigana": "される"
+            },
+            {
+                "type": "causative",
+                "text": "させる",
+                "furigana": "させる"
+            },
+            {
+                "type": "conditional",
+                "text": "すれば",
+                "furigana": "すれば"
+            },
+            {
+                "type": "volitional",
+                "text": "しよう",
+                "furigana": "しよう"
+            },
+            {
+                "type": "imperative",
+                "text": "しろ",
+                "furigana": "しろ"
+            }
+        ]
+    },
+    "いる": {
+        "lemma": "いる",
+        "furigana": "いる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "いない",
+                "furigana": "いない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "いません",
+                "furigana": "いません"
+            },
+            {
+                "type": "past-plain",
+                "text": "いた",
+                "furigana": "いた"
+            },
+            {
+                "type": "past-polite",
+                "text": "いました",
+                "furigana": "いました"
+            },
+            {
+                "type": "te-form",
+                "text": "いて",
+                "furigana": "いて"
+            },
+            {
+                "type": "potential",
+                "text": "いられる",
+                "furigana": "いられる"
+            },
+            {
+                "type": "passive",
+                "text": "いられる",
+                "furigana": "いられる"
+            },
+            {
+                "type": "causative",
+                "text": "いさせる",
+                "furigana": "いさせる"
+            },
+            {
+                "type": "conditional",
+                "text": "いれば",
+                "furigana": "いれば"
+            },
+            {
+                "type": "volitional",
+                "text": "いよう",
+                "furigana": "いよう"
+            },
+            {
+                "type": "imperative",
+                "text": "いろ",
+                "furigana": "いろ"
+            }
+        ]
+    },
+    "ある": {
+        "lemma": "ある",
+        "furigana": "ある",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "ない",
+                "furigana": "ない"
+            },
+            {
+                "type": "te-form",
+                "text": "あって",
+                "furigana": "あって"
+            },
+            {
+                "type": "past-plain",
+                "text": "あった",
+                "furigana": "あった"
+            }
+        ]
+    },
+    "なる": {
+        "lemma": "なる",
+        "furigana": "なる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "ならない",
+                "furigana": "ならない"
+            },
+            {
+                "type": "te-form",
+                "text": "なって",
+                "furigana": "なって"
+            },
+            {
+                "type": "past-plain",
+                "text": "なった",
+                "furigana": "なった"
+            }
+        ]
+    },
+    "言う": {
+        "lemma": "言う",
+        "furigana": "いう",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "言わない",
+                "furigana": "いわない"
+            },
+            {
+                "type": "te-form",
+                "text": "言って",
+                "furigana": "いって"
+            },
+            {
+                "type": "past-plain",
+                "text": "言った",
+                "furigana": "いった"
+            }
+        ]
+    },
+    "やる": {
+        "lemma": "やる",
+        "furigana": "やる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "やらない",
+                "furigana": "やらない"
+            },
+            {
+                "type": "te-form",
+                "text": "やって",
+                "furigana": "やって"
+            },
+            {
+                "type": "past-plain",
+                "text": "やった",
+                "furigana": "やった"
+            }
+        ]
+    },
+    "行く": {
+        "lemma": "行く",
+        "furigana": "いく",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "いかない",
+                "furigana": "いかない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "いきません",
+                "furigana": "いきません"
+            },
+            {
+                "type": "past-plain",
+                "text": "いった",
+                "furigana": "いった"
+            },
+            {
+                "type": "past-polite",
+                "text": "いきました",
+                "furigana": "いきました"
+            },
+            {
+                "type": "te-form",
+                "text": "いって",
+                "furigana": "いって"
+            },
+            {
+                "type": "potential",
+                "text": "いける",
+                "furigana": "いける"
+            },
+            {
+                "type": "passive",
+                "text": "いかれる",
+                "furigana": "いかれる"
+            },
+            {
+                "type": "causative",
+                "text": "いかせる",
+                "furigana": "いかせる"
+            },
+            {
+                "type": "conditional",
+                "text": "いけば",
+                "furigana": "いけば"
+            },
+            {
+                "type": "volitional",
+                "text": "いこう",
+                "furigana": "いこう"
+            },
+            {
+                "type": "imperative",
+                "text": "いけ",
+                "furigana": "いけ"
+            }
+        ]
+    },
+    "分かる": {
+        "lemma": "分かる",
+        "furigana": "わかる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "分からない",
+                "furigana": "わからない"
+            },
+            {
+                "type": "te-form",
+                "text": "分かって",
+                "furigana": "わかって"
+            },
+            {
+                "type": "past-plain",
+                "text": "分かった",
+                "furigana": "わかった"
+            }
+        ]
+    },
+    "くれる": {
+        "lemma": "くれる",
+        "furigana": "くれる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "くれない",
+                "furigana": "くれない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "くれません",
+                "furigana": "くれません"
+            },
+            {
+                "type": "past-plain",
+                "text": "くれた",
+                "furigana": "くれた"
+            },
+            {
+                "type": "past-polite",
+                "text": "くれました",
+                "furigana": "くれました"
+            },
+            {
+                "type": "te-form",
+                "text": "くれて",
+                "furigana": "くれて"
+            },
+            {
+                "type": "causative",
+                "text": "くれさせる",
+                "furigana": "くれさせる"
+            },
+            {
+                "type": "conditional",
+                "text": "くれれば",
+                "furigana": "くれれば"
+            },
+            {
+                "type": "volitional",
+                "text": "くれよう",
+                "furigana": "くれよう"
+            },
+            {
+                "type": "imperative",
+                "text": "くれろ",
+                "furigana": "くれろ"
+            }
+        ]
+    },
+    "見る": {
+        "lemma": "見る",
+        "furigana": "みる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "見ない",
+                "furigana": "みない"
+            },
+            {
+                "type": "te-form",
+                "text": "見て",
+                "furigana": "みて"
+            },
+            {
+                "type": "past-plain",
+                "text": "見た",
+                "furigana": "みた"
+            }
+        ]
+    },
+    "来る": {
+        "lemma": "来る",
+        "furigana": "くる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "こない",
+                "furigana": "こない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "きません",
+                "furigana": "きません"
+            },
+            {
+                "type": "past-plain",
+                "text": "きた",
+                "furigana": "きた"
+            },
+            {
+                "type": "past-polite",
+                "text": "きました",
+                "furigana": "きました"
+            },
+            {
+                "type": "te-form",
+                "text": "きて",
+                "furigana": "きて"
+            },
+            {
+                "type": "potential",
+                "text": "こられる",
+                "furigana": "こられる"
+            },
+            {
+                "type": "passive",
+                "text": "こられる",
+                "furigana": "こられる"
+            },
+            {
+                "type": "causative",
+                "text": "こさせる",
+                "furigana": "こさせる"
+            },
+            {
+                "type": "conditional",
+                "text": "くれば",
+                "furigana": "くれば"
+            },
+            {
+                "type": "volitional",
+                "text": "こよう",
+                "furigana": "こよう"
+            },
+            {
+                "type": "imperative",
+                "text": "こい",
+                "furigana": "こい"
+            }
+        ]
+    },
+    "思う": {
+        "lemma": "思う",
+        "furigana": "おもう",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "思わない",
+                "furigana": "おもわない"
+            },
+            {
+                "type": "te-form",
+                "text": "思って",
+                "furigana": "おもって"
+            },
+            {
+                "type": "past-plain",
+                "text": "思った",
+                "furigana": "おもった"
+            }
+        ]
+    },
+    "できる": {
+        "lemma": "できる",
+        "furigana": "できる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "できない",
+                "furigana": "できない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "できません",
+                "furigana": "できません"
+            },
+            {
+                "type": "past-plain",
+                "text": "できた",
+                "furigana": "できた"
+            },
+            {
+                "type": "past-polite",
+                "text": "できました",
+                "furigana": "できました"
+            },
+            {
+                "type": "te-form",
+                "text": "できて",
+                "furigana": "できて"
+            },
+            {
+                "type": "conditional",
+                "text": "できれば",
+                "furigana": "できれば"
+            }
+        ]
+    },
+    "聞く": {
+        "lemma": "聞く",
+        "furigana": "きく",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "聞かない",
+                "furigana": "きかない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "聞きません",
+                "furigana": "ききません"
+            },
+            {
+                "type": "past-plain",
+                "text": "聞いた",
+                "furigana": "きいた"
+            },
+            {
+                "type": "past-polite",
+                "text": "聞きました",
+                "furigana": "ききました"
+            },
+            {
+                "type": "te-form",
+                "text": "聞いて",
+                "furigana": "きいて"
+            },
+            {
+                "type": "potential",
+                "text": "聞ける",
+                "furigana": "きける"
+            },
+            {
+                "type": "passive",
+                "text": "聞かれる",
+                "furigana": "きかれる"
+            },
+            {
+                "type": "causative",
+                "text": "聞かせる",
+                "furigana": "きかせる"
+            },
+            {
+                "type": "conditional",
+                "text": "聞けば",
+                "furigana": "きけば"
+            },
+            {
+                "type": "volitional",
+                "text": "聞こう",
+                "furigana": "きこう"
+            },
+            {
+                "type": "imperative",
+                "text": "聞け",
+                "furigana": "きけ"
+            }
+        ]
+    },
+    "食べる": {
+        "lemma": "食べる",
+        "furigana": "たべる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "食べない",
+                "furigana": "たべない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "食べません",
+                "furigana": "たべません"
+            },
+            {
+                "type": "past-plain",
+                "text": "食べた",
+                "furigana": "たべた"
+            },
+            {
+                "type": "past-polite",
+                "text": "食べました",
+                "furigana": "たべました"
+            },
+            {
+                "type": "te-form",
+                "text": "食べて",
+                "furigana": "たべて"
+            },
+            {
+                "type": "potential",
+                "text": "食べられる",
+                "furigana": "たべられる"
+            },
+            {
+                "type": "passive",
+                "text": "食べられる",
+                "furigana": "たべられる"
+            },
+            {
+                "type": "causative",
+                "text": "食べさせる",
+                "furigana": "たべさせる"
+            },
+            {
+                "type": "conditional",
+                "text": "食べれば",
+                "furigana": "たべれば"
+            },
+            {
+                "type": "volitional",
+                "text": "食べよう",
+                "furigana": "たべよう"
+            },
+            {
+                "type": "imperative",
+                "text": "食べろ",
+                "furigana": "たべろ"
+            }
+        ]
+    },
+    "使う": {
+        "lemma": "使う",
+        "furigana": "つかう",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "使わない",
+                "furigana": "つかわない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "使いません",
+                "furigana": "つかいません"
+            },
+            {
+                "type": "past-plain",
+                "text": "使った",
+                "furigana": "つかった"
+            },
+            {
+                "type": "past-polite",
+                "text": "使いました",
+                "furigana": "つかいました"
+            },
+            {
+                "type": "te-form",
+                "text": "使って",
+                "furigana": "つかって"
+            },
+            {
+                "type": "potential",
+                "text": "使える",
+                "furigana": "つかえる"
+            },
+            {
+                "type": "passive",
+                "text": "使われる",
+                "furigana": "つかわれる"
+            },
+            {
+                "type": "causative",
+                "text": "使わせる",
+                "furigana": "つかわせる"
+            },
+            {
+                "type": "conditional",
+                "text": "使えば",
+                "furigana": "つかえば"
+            },
+            {
+                "type": "volitional",
+                "text": "使おう",
+                "furigana": "つかおう"
+            },
+            {
+                "type": "imperative",
+                "text": "使え",
+                "furigana": "つかえ"
+            }
+        ]
+    },
+    "会う": {
+        "lemma": "会う",
+        "furigana": "あう",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "会わない",
+                "furigana": "あわない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "会いません",
+                "furigana": "あいません"
+            },
+            {
+                "type": "past-plain",
+                "text": "会った",
+                "furigana": "あった"
+            },
+            {
+                "type": "past-polite",
+                "text": "会いました",
+                "furigana": "あいました"
+            },
+            {
+                "type": "te-form",
+                "text": "会って",
+                "furigana": "あって"
+            },
+            {
+                "type": "potential",
+                "text": "会える",
+                "furigana": "あえる"
+            },
+            {
+                "type": "passive",
+                "text": "会われる",
+                "furigana": "あわれる"
+            },
+            {
+                "type": "causative",
+                "text": "会わせる",
+                "furigana": "あわせる"
+            },
+            {
+                "type": "conditional",
+                "text": "会えば",
+                "furigana": "あえば"
+            },
+            {
+                "type": "volitional",
+                "text": "会おう",
+                "furigana": "あおう"
+            },
+            {
+                "type": "imperative",
+                "text": "会え",
+                "furigana": "あえ"
+            }
+        ]
+    },
+    "違う": {
+        "lemma": "違う",
+        "furigana": "ちがう",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "違わない",
+                "furigana": "ちがわない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "違いません",
+                "furigana": "ちがいません"
+            },
+            {
+                "type": "past-plain",
+                "text": "違った",
+                "furigana": "ちがった"
+            },
+            {
+                "type": "past-polite",
+                "text": "違いました",
+                "furigana": "ちがいました"
+            },
+            {
+                "type": "te-form",
+                "text": "違って",
+                "furigana": "ちがって"
+            },
+            {
+                "type": "potential",
+                "text": "違える",
+                "furigana": "ちがえる"
+            },
+            {
+                "type": "passive",
+                "text": "違われる",
+                "furigana": "ちがわれる"
+            },
+            {
+                "type": "causative",
+                "text": "違わせる",
+                "furigana": "ちがわせる"
+            },
+            {
+                "type": "conditional",
+                "text": "違えば",
+                "furigana": "ちがえば"
+            },
+            {
+                "type": "volitional",
+                "text": "違おう",
+                "furigana": "ちがおう"
+            },
+            {
+                "type": "imperative",
+                "text": "違え",
+                "furigana": "ちがえ"
+            }
+        ]
+    },
+    "働く": {
+        "lemma": "働く",
+        "furigana": "はたらく",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "働かない",
+                "furigana": "はたらかない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "働きません",
+                "furigana": "はたらきません"
+            },
+            {
+                "type": "past-plain",
+                "text": "働いた",
+                "furigana": "はたらいた"
+            },
+            {
+                "type": "past-polite",
+                "text": "働きました",
+                "furigana": "はたらきました"
+            },
+            {
+                "type": "te-form",
+                "text": "働いて",
+                "furigana": "はたらいて"
+            },
+            {
+                "type": "potential",
+                "text": "働ける",
+                "furigana": "はたらける"
+            },
+            {
+                "type": "passive",
+                "text": "働かれる",
+                "furigana": "はたらかれる"
+            },
+            {
+                "type": "causative",
+                "text": "働かせる",
+                "furigana": "はたらかせる"
+            },
+            {
+                "type": "conditional",
+                "text": "働けば",
+                "furigana": "はたらけば"
+            },
+            {
+                "type": "volitional",
+                "text": "働こう",
+                "furigana": "はたらこう"
+            },
+            {
+                "type": "imperative",
+                "text": "働け",
+                "furigana": "はたらけ"
+            }
+        ]
+    },
+    "動く": {
+        "lemma": "動く",
+        "furigana": "うごく",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "動かない",
+                "furigana": "うごかない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "動きません",
+                "furigana": "うごきません"
+            },
+            {
+                "type": "past-plain",
+                "text": "動いた",
+                "furigana": "うごいた"
+            },
+            {
+                "type": "past-polite",
+                "text": "動きました",
+                "furigana": "うごきました"
+            },
+            {
+                "type": "te-form",
+                "text": "動いて",
+                "furigana": "うごいて"
+            },
+            {
+                "type": "potential",
+                "text": "動ける",
+                "furigana": "うごける"
+            },
+            {
+                "type": "passive",
+                "text": "動かれる",
+                "furigana": "うごかれる"
+            },
+            {
+                "type": "causative",
+                "text": "動かせる",
+                "furigana": "うごかせる"
+            },
+            {
+                "type": "conditional",
+                "text": "動けば",
+                "furigana": "うごけば"
+            },
+            {
+                "type": "volitional",
+                "text": "動こう",
+                "furigana": "うごこう"
+            },
+            {
+                "type": "imperative",
+                "text": "動け",
+                "furigana": "うごけ"
+            }
+        ]
+    },
+    "死ぬ": {
+        "lemma": "死ぬ",
+        "furigana": "しぬ",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "死なない",
+                "furigana": "しなない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "死にません",
+                "furigana": "しにません"
+            },
+            {
+                "type": "past-plain",
+                "text": "死んだ",
+                "furigana": "しんだ"
+            },
+            {
+                "type": "past-polite",
+                "text": "死にました",
+                "furigana": "しにました"
+            },
+            {
+                "type": "te-form",
+                "text": "死んで",
+                "furigana": "しんで"
+            },
+            {
+                "type": "potential",
+                "text": "死ねる",
+                "furigana": "しねる"
+            },
+            {
+                "type": "passive",
+                "text": "死なれる",
+                "furigana": "しなれる"
+            },
+            {
+                "type": "causative",
+                "text": "死なせる",
+                "furigana": "しなせる"
+            },
+            {
+                "type": "conditional",
+                "text": "死ねば",
+                "furigana": "しねば"
+            },
+            {
+                "type": "volitional",
+                "text": "死のう",
+                "furigana": "しのう"
+            },
+            {
+                "type": "imperative",
+                "text": "死ね",
+                "furigana": "しね"
+            }
+        ]
+    },
+    "生む": {
+        "lemma": "生む",
+        "furigana": "うむ",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "生まない",
+                "furigana": "うまない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "生みません",
+                "furigana": "うみません"
+            },
+            {
+                "type": "past-plain",
+                "text": "生んだ",
+                "furigana": "うんだ"
+            },
+            {
+                "type": "past-polite",
+                "text": "生みました",
+                "furigana": "うみました"
+            },
+            {
+                "type": "te-form",
+                "text": "生んで",
+                "furigana": "うんで"
+            },
+            {
+                "type": "potential",
+                "text": "生める",
+                "furigana": "うめる"
+            },
+            {
+                "type": "passive",
+                "text": "生まれる",
+                "furigana": "うまれる"
+            },
+            {
+                "type": "causative",
+                "text": "生ませる",
+                "furigana": "うませる"
+            },
+            {
+                "type": "conditional",
+                "text": "生めば",
+                "furigana": "うめば"
+            },
+            {
+                "type": "volitional",
+                "text": "生もう",
+                "furigana": "うもう"
+            },
+            {
+                "type": "imperative",
+                "text": "生め",
+                "furigana": "うめ"
+            }
+        ]
+    },
+    "噛む": {
+        "lemma": "噛む",
+        "furigana": "かむ",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "噛まない",
+                "furigana": "かまない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "噛みません",
+                "furigana": "かみません"
+            },
+            {
+                "type": "past-plain",
+                "text": "噛んだ",
+                "furigana": "かんだ"
+            },
+            {
+                "type": "past-polite",
+                "text": "噛みました",
+                "furigana": "かみました"
+            },
+            {
+                "type": "te-form",
+                "text": "噛んで",
+                "furigana": "かんで"
+            },
+            {
+                "type": "potential",
+                "text": "噛める",
+                "furigana": "かめる"
+            },
+            {
+                "type": "passive",
+                "text": "噛まれる",
+                "furigana": "かまれる"
+            },
+            {
+                "type": "causative",
+                "text": "噛ませる",
+                "furigana": "かませる"
+            },
+            {
+                "type": "conditional",
+                "text": "噛めば",
+                "furigana": "かめば"
+            },
+            {
+                "type": "volitional",
+                "text": "噛もう",
+                "furigana": "かもう"
+            },
+            {
+                "type": "imperative",
+                "text": "噛め",
+                "furigana": "かめ"
+            }
+        ]
+    },
+    "飲む": {
+        "lemma": "飲む",
+        "furigana": "のむ",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "飲まない",
+                "furigana": "のまない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "飲みません",
+                "furigana": "のみません"
+            },
+            {
+                "type": "past-plain",
+                "text": "飲んだ",
+                "furigana": "のんだ"
+            },
+            {
+                "type": "past-polite",
+                "text": "飲みました",
+                "furigana": "のみました"
+            },
+            {
+                "type": "te-form",
+                "text": "飲んで",
+                "furigana": "のんで"
+            },
+            {
+                "type": "potential",
+                "text": "飲める",
+                "furigana": "のめる"
+            },
+            {
+                "type": "passive",
+                "text": "飲まれる",
+                "furigana": "のまれる"
+            },
+            {
+                "type": "causative",
+                "text": "飲ませる",
+                "furigana": "のませる"
+            },
+            {
+                "type": "conditional",
+                "text": "飲めば",
+                "furigana": "のめば"
+            },
+            {
+                "type": "volitional",
+                "text": "飲もう",
+                "furigana": "のもう"
+            },
+            {
+                "type": "imperative",
+                "text": "飲め",
+                "furigana": "のめ"
+            }
+        ]
+    },
+    "読む": {
+        "lemma": "読む",
+        "furigana": "よむ",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "読まない",
+                "furigana": "よまない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "読みません",
+                "furigana": "よみません"
+            },
+            {
+                "type": "past-plain",
+                "text": "読んだ",
+                "furigana": "よんだ"
+            },
+            {
+                "type": "past-polite",
+                "text": "読みました",
+                "furigana": "よみました"
+            },
+            {
+                "type": "te-form",
+                "text": "読んで",
+                "furigana": "よんで"
+            },
+            {
+                "type": "potential",
+                "text": "読める",
+                "furigana": "よめる"
+            },
+            {
+                "type": "passive",
+                "text": "読まれる",
+                "furigana": "よまれる"
+            },
+            {
+                "type": "causative",
+                "text": "読ませる",
+                "furigana": "よませる"
+            },
+            {
+                "type": "conditional",
+                "text": "読めば",
+                "furigana": "よめば"
+            },
+            {
+                "type": "volitional",
+                "text": "読もう",
+                "furigana": "よもう"
+            },
+            {
+                "type": "imperative",
+                "text": "読め",
+                "furigana": "よめ"
+            }
+        ]
+    },
+    "切る": {
+        "lemma": "切る",
+        "furigana": "きる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "切らない",
+                "furigana": "きらない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "切りません",
+                "furigana": "きりません"
+            },
+            {
+                "type": "past-plain",
+                "text": "切った",
+                "furigana": "きった"
+            },
+            {
+                "type": "past-polite",
+                "text": "切りました",
+                "furigana": "きりました"
+            },
+            {
+                "type": "te-form",
+                "text": "切って",
+                "furigana": "きって"
+            },
+            {
+                "type": "potential",
+                "text": "切れる",
+                "furigana": "きれる"
+            },
+            {
+                "type": "passive",
+                "text": "切られる",
+                "furigana": "きられる"
+            },
+            {
+                "type": "causative",
+                "text": "切らせる",
+                "furigana": "きらせる"
+            },
+            {
+                "type": "conditional",
+                "text": "切れば",
+                "furigana": "きれば"
+            },
+            {
+                "type": "volitional",
+                "text": "切ろう",
+                "furigana": "きろう"
+            },
+            {
+                "type": "imperative",
+                "text": "切れ",
+                "furigana": "きれ"
+            }
+        ]
+    },
+    "着る": {
+        "lemma": "着る",
+        "furigana": "きる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "着ない",
+                "furigana": "きない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "着ません",
+                "furigana": "きません"
+            },
+            {
+                "type": "past-plain",
+                "text": "着た",
+                "furigana": "きた"
+            },
+            {
+                "type": "past-polite",
+                "text": "着ました",
+                "furigana": "きました"
+            },
+            {
+                "type": "te-form",
+                "text": "着て",
+                "furigana": "きて"
+            },
+            {
+                "type": "potential",
+                "text": "着られる",
+                "furigana": "きられる"
+            },
+            {
+                "type": "passive",
+                "text": "着られる",
+                "furigana": "きられる"
+            },
+            {
+                "type": "causative",
+                "text": "着させる",
+                "furigana": "きさせる"
+            },
+            {
+                "type": "conditional",
+                "text": "着れば",
+                "furigana": "きれば"
+            },
+            {
+                "type": "volitional",
+                "text": "着よう",
+                "furigana": "きよう"
+            },
+            {
+                "type": "imperative",
+                "text": "着ろ",
+                "furigana": "きろ"
+            }
+        ]
+    },
+    "掘る": {
+        "lemma": "掘る",
+        "furigana": "ほる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "掘らない",
+                "furigana": "ほらない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "掘りません",
+                "furigana": "ほりません"
+            },
+            {
+                "type": "past-plain",
+                "text": "掘った",
+                "furigana": "ほった"
+            },
+            {
+                "type": "past-polite",
+                "text": "掘りました",
+                "furigana": "ほりました"
+            },
+            {
+                "type": "te-form",
+                "text": "掘って",
+                "furigana": "ほって"
+            },
+            {
+                "type": "potential",
+                "text": "掘れる",
+                "furigana": "ほれる"
+            },
+            {
+                "type": "passive",
+                "text": "掘られる",
+                "furigana": "ほられる"
+            },
+            {
+                "type": "causative",
+                "text": "掘らせる",
+                "furigana": "ほらせる"
+            },
+            {
+                "type": "conditional",
+                "text": "掘れば",
+                "furigana": "ほれば"
+            },
+            {
+                "type": "volitional",
+                "text": "掘ろう",
+                "furigana": "ほろう"
+            },
+            {
+                "type": "imperative",
+                "text": "掘れ",
+                "furigana": "ほれ"
+            }
+        ]
+    },
+    "出す": {
+        "lemma": "出す",
+        "furigana": "だす",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "出さない",
+                "furigana": "ださない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "出しません",
+                "furigana": "だしません"
+            },
+            {
+                "type": "past-plain",
+                "text": "出した",
+                "furigana": "だした"
+            },
+            {
+                "type": "past-polite",
+                "text": "出しました",
+                "furigana": "だしました"
+            },
+            {
+                "type": "te-form",
+                "text": "出して",
+                "furigana": "だして"
+            },
+            {
+                "type": "potential",
+                "text": "出せる",
+                "furigana": "だせる"
+            },
+            {
+                "type": "passive",
+                "text": "出される",
+                "furigana": "だされる"
+            },
+            {
+                "type": "causative",
+                "text": "出させる",
+                "furigana": "ださせる"
+            },
+            {
+                "type": "conditional",
+                "text": "出せば",
+                "furigana": "だせば"
+            },
+            {
+                "type": "volitional",
+                "text": "出そう",
+                "furigana": "だそう"
+            },
+            {
+                "type": "imperative",
+                "text": "出せ",
+                "furigana": "だせ"
+            }
+        ]
+    },
+    "出る": {
+        "lemma": "出る",
+        "furigana": "でる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "出ない",
+                "furigana": "でない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "出ません",
+                "furigana": "でません"
+            },
+            {
+                "type": "past-plain",
+                "text": "出た",
+                "furigana": "でた"
+            },
+            {
+                "type": "past-polite",
+                "text": "出ました",
+                "furigana": "でました"
+            },
+            {
+                "type": "te-form",
+                "text": "出て",
+                "furigana": "でて"
+            },
+            {
+                "type": "potential",
+                "text": "出られる",
+                "furigana": "でられる"
+            },
+            {
+                "type": "passive",
+                "text": "出られる",
+                "furigana": "でられる"
+            },
+            {
+                "type": "causative",
+                "text": "出させる",
+                "furigana": "ださせる"
+            },
+            {
+                "type": "conditional",
+                "text": "出れば",
+                "furigana": "でれば"
+            },
+            {
+                "type": "volitional",
+                "text": "出よう",
+                "furigana": "でよう"
+            },
+            {
+                "type": "imperative",
+                "text": "出ろ",
+                "furigana": "でろ"
+            }
+        ]
+    },
+    "狩る": {
+        "lemma": "狩る",
+        "furigana": "かる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "狩らない",
+                "furigana": "からない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "狩りません",
+                "furigana": "かりません"
+            },
+            {
+                "type": "past-plain",
+                "text": "狩った",
+                "furigana": "かった"
+            },
+            {
+                "type": "past-polite",
+                "text": "狩りました",
+                "furigana": "かりました"
+            },
+            {
+                "type": "te-form",
+                "text": "狩って",
+                "furigana": "かって"
+            },
+            {
+                "type": "potential",
+                "text": "狩れる",
+                "furigana": "かれる"
+            },
+            {
+                "type": "passive",
+                "text": "狩られる",
+                "furigana": "かられる"
+            },
+            {
+                "type": "causative",
+                "text": "狩らせる",
+                "furigana": "からせる"
+            },
+            {
+                "type": "conditional",
+                "text": "狩れば",
+                "furigana": "かれば"
+            },
+            {
+                "type": "volitional",
+                "text": "狩ろう",
+                "furigana": "かろう"
+            },
+            {
+                "type": "imperative",
+                "text": "狩れ",
+                "furigana": "かれ"
+            }
+        ]
+    },
+    "残る": {
+        "lemma": "残る",
+        "furigana": "のこる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "残らない",
+                "furigana": "のこらない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "残りません",
+                "furigana": "のこりません"
+            },
+            {
+                "type": "past-plain",
+                "text": "残った",
+                "furigana": "のこった"
+            },
+            {
+                "type": "past-polite",
+                "text": "残りました",
+                "furigana": "のこりました"
+            },
+            {
+                "type": "te-form",
+                "text": "残って",
+                "furigana": "のこって"
+            },
+            {
+                "type": "potential",
+                "text": "残れる",
+                "furigana": "のこれる"
+            },
+            {
+                "type": "passive",
+                "text": "残られる",
+                "furigana": "のこられる"
+            },
+            {
+                "type": "causative",
+                "text": "残らせる",
+                "furigana": "のこらせる"
+            },
+            {
+                "type": "conditional",
+                "text": "残れば",
+                "furigana": "のこれば"
+            },
+            {
+                "type": "volitional",
+                "text": "残ろう",
+                "furigana": "のころう"
+            },
+            {
+                "type": "imperative",
+                "text": "残れ",
+                "furigana": "のこれ"
+            }
+        ]
+    },
+    "残す": {
+        "lemma": "残す",
+        "furigana": "のこす",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "残さない",
+                "furigana": "のこさない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "残しません",
+                "furigana": "のこしません"
+            },
+            {
+                "type": "past-plain",
+                "text": "残した",
+                "furigana": "のこした"
+            },
+            {
+                "type": "past-polite",
+                "text": "残しました",
+                "furigana": "のこしました"
+            },
+            {
+                "type": "te-form",
+                "text": "残して",
+                "furigana": "のこして"
+            },
+            {
+                "type": "potential",
+                "text": "残せる",
+                "furigana": "のこせる"
+            },
+            {
+                "type": "passive",
+                "text": "残される",
+                "furigana": "のこされる"
+            },
+            {
+                "type": "causative",
+                "text": "残させる",
+                "furigana": "のこさせる"
+            },
+            {
+                "type": "conditional",
+                "text": "残せば",
+                "furigana": "のこせば"
+            },
+            {
+                "type": "volitional",
+                "text": "残そう",
+                "furigana": "のこそう"
+            },
+            {
+                "type": "imperative",
+                "text": "残せ",
+                "furigana": "のこせ"
+            }
+        ]
+    },
+    "話す": {
+        "lemma": "話す",
+        "furigana": "はなす",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "話さない",
+                "furigana": "はなさない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "話しません",
+                "furigana": "はなしません"
+            },
+            {
+                "type": "past-plain",
+                "text": "話した",
+                "furigana": "はなした"
+            },
+            {
+                "type": "past-polite",
+                "text": "話しました",
+                "furigana": "はなしました"
+            },
+            {
+                "type": "te-form",
+                "text": "話して",
+                "furigana": "はなして"
+            },
+            {
+                "type": "potential",
+                "text": "話せる",
+                "furigana": "はなせる"
+            },
+            {
+                "type": "passive",
+                "text": "話される",
+                "furigana": "はなされる"
+            },
+            {
+                "type": "causative",
+                "text": "話させる",
+                "furigana": "はなさせる"
+            },
+            {
+                "type": "conditional",
+                "text": "話せば",
+                "furigana": "はなせば"
+            },
+            {
+                "type": "volitional",
+                "text": "話そう",
+                "furigana": "はなそう"
+            },
+            {
+                "type": "imperative",
+                "text": "話せ",
+                "furigana": "はなせ"
+            }
+        ]
+    },
+    "得る": {
+        "lemma": "得る",
+        "furigana": "える",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "得ない",
+                "furigana": "えない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "得ません",
+                "furigana": "えません"
+            },
+            {
+                "type": "past-plain",
+                "text": "得た",
+                "furigana": "えた"
+            },
+            {
+                "type": "past-polite",
+                "text": "得ました",
+                "furigana": "えました"
+            },
+            {
+                "type": "te-form",
+                "text": "得て",
+                "furigana": "えて"
+            },
+            {
+                "type": "potential",
+                "text": "得られる",
+                "furigana": "えられる"
+            },
+            {
+                "type": "passive",
+                "text": "得られる",
+                "furigana": "えられる"
+            },
+            {
+                "type": "causative",
+                "text": "得させる",
+                "furigana": "えさせる"
+            },
+            {
+                "type": "conditional",
+                "text": "得れば",
+                "furigana": "えれば"
+            },
+            {
+                "type": "volitional",
+                "text": "得よう",
+                "furigana": "えよう"
+            },
+            {
+                "type": "imperative",
+                "text": "得ろ",
+                "furigana": "えろ"
+            }
+        ]
+    },
+    "感じる": {
+        "lemma": "感じる",
+        "furigana": "かんじる",
+        "type": "verb",
+        "conjugations": [
+            {
+                "type": "negative-plain",
+                "text": "感じない",
+                "furigana": "かんじない"
+            },
+            {
+                "type": "negative-polite",
+                "text": "感じません",
+                "furigana": "かんじません"
+            },
+            {
+                "type": "past-plain",
+                "text": "感じた",
+                "furigana": "かんじた"
+            },
+            {
+                "type": "past-polite",
+                "text": "感じました",
+                "furigana": "かんじました"
+            },
+            {
+                "type": "te-form",
+                "text": "感じて",
+                "furigana": "かんじて"
+            },
+            {
+                "type": "potential",
+                "text": "感じられる",
+                "furigana": "かんじられる"
+            },
+            {
+                "type": "passive",
+                "text": "感じられる",
+                "furigana": "かんじられる"
+            },
+            {
+                "type": "causative",
+                "text": "感じさせる",
+                "furigana": "かんじさせる"
+            },
+            {
+                "type": "conditional",
+                "text": "感じれば",
+                "furigana": "かんじれば"
+            },
+            {
+                "type": "volitional",
+                "text": "感じよう",
+                "furigana": "かんじよう"
+            },
+            {
+                "type": "imperative",
+                "text": "感じろ",
+                "furigana": "かんじろ"
+            }
+        ]
+    }
+}
