@@ -22,7 +22,7 @@ describe('Component Integration Tests', () => {
 	it('should correctly validate answers using answering logic', () => {
 		// Test correct answer
 		expect(isAnswerCorrect(mockQuestion, 0)).toBe(true);
-		
+
 		// Test wrong answer
 		expect(isAnswerCorrect(mockQuestion, 1)).toBe(false);
 		expect(isAnswerCorrect(mockQuestion, 2)).toBe(false);
@@ -33,7 +33,7 @@ describe('Component Integration Tests', () => {
 			{ questionId: 'q1', selectedAnswer: 0, isCorrect: true },
 			{ questionId: 'q2', selectedAnswer: 1, isCorrect: true }
 		];
-		
+
 		const mixedAnswers = [
 			{ questionId: 'q1', selectedAnswer: 0, isCorrect: true },
 			{ questionId: 'q2', selectedAnswer: 2, isCorrect: false }
@@ -57,8 +57,10 @@ describe('Component Integration Tests', () => {
 
 		// Get current state
 		let currentState: any;
-		store.subscribe(state => { currentState = state; })();
-		
+		store.subscribe((state) => {
+			currentState = state;
+		})();
+
 		expect(currentState.answers).toHaveLength(1);
 		expect(currentState.answers[0].questionId).toBe(mockQuestion.id);
 		expect(currentState.answers[0].isCorrect).toBe(true);
@@ -68,8 +70,10 @@ describe('Component Integration Tests', () => {
 		store.completeExercise('test-exercise');
 
 		let currentState: any;
-		store.subscribe(state => { currentState = state; })();
-		
+		store.subscribe((state) => {
+			currentState = state;
+		})();
+
 		expect(currentState.completions).toHaveLength(1);
 		expect(currentState.completions[0].exerciseId).toBe('test-exercise');
 	});

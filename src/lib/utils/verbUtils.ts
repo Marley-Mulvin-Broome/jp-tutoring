@@ -16,54 +16,61 @@ export function getRandomVerb(): Verb {
 export function getAvailableConjugationTypes(): string[] {
 	const verbs = getVerbs();
 	const allTypes = new Set<string>();
-	
-	verbs.forEach(verb => {
-		verb.conjugations.forEach(conj => {
+
+	verbs.forEach((verb) => {
+		verb.conjugations.forEach((conj) => {
 			allTypes.add(conj.type);
 		});
 	});
-	
+
 	return Array.from(allTypes).sort();
 }
 
 // Get conjugation for a verb in a specific form
 export function getConjugation(verb: Verb, targetForm: string): string | null {
-	const conjugation = verb.conjugations.find(conj => conj.type === targetForm);
+	const conjugation = verb.conjugations.find((conj) => conj.type === targetForm);
 	return conjugation ? conjugation.text : null;
 }
 
 // Check if a user's answer is correct (handles both kanji and furigana)
-export function checkAnswer(userAnswer: string, correctAnswer: string, verb: Verb, targetForm: string): {
+export function checkAnswer(
+	userAnswer: string,
+	correctAnswer: string,
+	verb: Verb,
+	targetForm: string
+): {
 	isCorrect: boolean;
 	correctAnswer: string;
 } {
 	const cleanUserAnswer = userAnswer.trim().toLowerCase();
 	const cleanCorrectAnswer = correctAnswer.toLowerCase();
-	
+
 	// Get the conjugation object to access furigana
-	const conjugation = verb.conjugations.find(conj => conj.type === targetForm);
+	const conjugation = verb.conjugations.find((conj) => conj.type === targetForm);
 	const furiganaAnswer = conjugation?.furigana?.toLowerCase() || '';
-	
+
 	// Direct match with kanji/text version
 	if (cleanUserAnswer === cleanCorrectAnswer) {
 		return { isCorrect: true, correctAnswer };
 	}
-	
+
 	// Match with furigana version
 	if (furiganaAnswer && cleanUserAnswer === furiganaAnswer) {
 		return { isCorrect: true, correctAnswer };
 	}
-	
+
 	// For additional flexibility, also check without particles/spaces
 	const normalizedUserAnswer = cleanUserAnswer.replace(/\s+/g, '');
 	const normalizedCorrectAnswer = cleanCorrectAnswer.replace(/\s+/g, '');
 	const normalizedFurigana = furiganaAnswer.replace(/\s+/g, '');
-	
-	if (normalizedUserAnswer === normalizedCorrectAnswer || 
-		(normalizedFurigana && normalizedUserAnswer === normalizedFurigana)) {
+
+	if (
+		normalizedUserAnswer === normalizedCorrectAnswer ||
+		(normalizedFurigana && normalizedUserAnswer === normalizedFurigana)
+	) {
 		return { isCorrect: true, correctAnswer };
 	}
-	
+
 	return { isCorrect: false, correctAnswer };
 }
 
@@ -71,19 +78,19 @@ export function checkAnswer(userAnswer: string, correctAnswer: string, verb: Ver
 export function generateVerbQuestions(settings: VerbGameSettings): VerbQuestion[] {
 	const questions: VerbQuestion[] = [];
 	const verbs = getVerbs();
-	
+
 	for (let i = 0; i < settings.numberOfQuestions; i++) {
 		let verb: Verb;
 		let targetForm: string;
 		let correctAnswer: string | null = null;
-		
+
 		// Keep trying until we find a verb that has the target conjugation
 		do {
 			verb = getRandomVerb();
 			targetForm = settings.targetForms[Math.floor(Math.random() * settings.targetForms.length)];
 			correctAnswer = getConjugation(verb, targetForm);
 		} while (!correctAnswer);
-		
+
 		questions.push({
 			id: `q${i + 1}`,
 			verb,
@@ -91,7 +98,7 @@ export function generateVerbQuestions(settings: VerbGameSettings): VerbQuestion[
 			correctAnswer
 		});
 	}
-	
+
 	return questions;
 }
 
@@ -103,14 +110,14 @@ export function getConjugationDisplayName(type: string): string {
 		'past-plain': '過去形（普通体）',
 		'past-polite': '過去形（丁寧語）',
 		'te-form': 'て形',
-		'potential': '可能形',
-		'passive': '受身形',
-		'causative': '使役形',
-		'conditional': '条件形',
-		'volitional': '意志形',
-		'imperative': '命令形'
+		potential: '可能形',
+		passive: '受身形',
+		causative: '使役形',
+		conditional: '条件形',
+		volitional: '意志形',
+		imperative: '命令形'
 	};
-	
+
 	return displayNames[type] || type;
 }
 

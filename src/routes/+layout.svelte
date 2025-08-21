@@ -5,9 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>
-		Japanese Practice
-	</title>
+	<title>Japanese Practice</title>
 </svelte:head>
 
 {@render children()}

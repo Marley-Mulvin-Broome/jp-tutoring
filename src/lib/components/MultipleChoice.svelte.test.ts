@@ -53,7 +53,7 @@ describe('MultipleChoice Component', () => {
 
 	it('should handle option selection', async () => {
 		const onAnswerSelect = vi.fn();
-		
+
 		render(MultipleChoice, {
 			question: mockQuestion,
 			exerciseId: 'test-exercise',

@@ -31,7 +31,9 @@ test.describe('Japanese Reading Practice App - Integration Tests', () => {
 		await firstQuestion.getByText('七時').click();
 
 		// Answer should be selected
-		await expect(firstQuestion.getByRole('button').filter({ hasText: '七時' })).toHaveClass(/border-blue-500/);
+		await expect(firstQuestion.getByRole('button').filter({ hasText: '七時' })).toHaveClass(
+			/border-blue-500/
+		);
 
 		// Answer the second question
 		const secondQuestion = page.getByTestId('multiple-choice-container').nth(1);
@@ -53,7 +55,7 @@ test.describe('Japanese Reading Practice App - Integration Tests', () => {
 
 		// Progress should be updated in sidebar
 		await expect(page.getByText('3/3 問題完了')).toBeVisible();
-		
+
 		// Should show completed status in sidebar
 		const sidebar = page.locator('[data-testid="exercise-sidebar"]');
 		await expect(sidebar.locator('svg').first()).toBeVisible(); // Completion checkmark
@@ -69,7 +71,7 @@ test.describe('Japanese Reading Practice App - Integration Tests', () => {
 		const firstQuestion = page.getByTestId('multiple-choice-container').first();
 		await firstQuestion.getByText('六時').click(); // Wrong answer
 
-		// Answer second question correctly  
+		// Answer second question correctly
 		const secondQuestion = page.getByTestId('multiple-choice-container').nth(1);
 		await secondQuestion.getByText('電車で').click();
 
@@ -90,8 +92,12 @@ test.describe('Japanese Reading Practice App - Integration Tests', () => {
 		await expect(page.getByText('不正解です。正解は「お弁当を食べます」です。')).toBeVisible();
 
 		// Should highlight correct and incorrect answers
-		await expect(firstQuestion.getByRole('button').filter({ hasText: '七時' })).toHaveClass(/border-green-500/);
-		await expect(firstQuestion.getByRole('button').filter({ hasText: '六時' })).toHaveClass(/border-red-500/);
+		await expect(firstQuestion.getByRole('button').filter({ hasText: '七時' })).toHaveClass(
+			/border-green-500/
+		);
+		await expect(firstQuestion.getByRole('button').filter({ hasText: '六時' })).toHaveClass(
+			/border-red-500/
+		);
 	});
 
 	test('should persist progress across page reloads', async ({ page }) => {
@@ -105,8 +111,20 @@ test.describe('Japanese Reading Practice App - Integration Tests', () => {
 		await page.reload();
 
 		// Answers should be preserved
-		await expect(page.getByTestId('multiple-choice-container').first().getByRole('button').filter({ hasText: '七時' })).toHaveClass(/border-blue-500/);
-		await expect(page.getByTestId('multiple-choice-container').nth(1).getByRole('button').filter({ hasText: '電車で' })).toHaveClass(/border-blue-500/);
+		await expect(
+			page
+				.getByTestId('multiple-choice-container')
+				.first()
+				.getByRole('button')
+				.filter({ hasText: '七時' })
+		).toHaveClass(/border-blue-500/);
+		await expect(
+			page
+				.getByTestId('multiple-choice-container')
+				.nth(1)
+				.getByRole('button')
+				.filter({ hasText: '電車で' })
+		).toHaveClass(/border-blue-500/);
 	});
 
 	test('should allow retrying exercises', async ({ page }) => {
@@ -115,8 +133,12 @@ test.describe('Japanese Reading Practice App - Integration Tests', () => {
 		// Complete exercise
 		await page.getByTestId('multiple-choice-container').first().getByText('七時').click();
 		await page.getByTestId('multiple-choice-container').nth(1).getByText('電車で').click();
-		await page.getByTestId('multiple-choice-container').nth(2).getByText('お弁当を食べます').click();
-		
+		await page
+			.getByTestId('multiple-choice-container')
+			.nth(2)
+			.getByText('お弁当を食べます')
+			.click();
+
 		await page.getByText('答えを確認').click();
 
 		// Should show retry button
@@ -155,11 +177,23 @@ test.describe('Japanese Reading Practice App - Integration Tests', () => {
 	test('should show progress in collection cards on home page', async ({ page }) => {
 		// Complete an exercise first
 		await page.goto('/daily-life');
-		
+
 		// Complete first exercise
-		await page.locator('[data-testid="multiple-choice-container"]').first().getByText('七時').click();
-		await page.locator('[data-testid="multiple-choice-container"]').nth(1).getByText('電車で').click();
-		await page.locator('[data-testid="multiple-choice-container"]').nth(2).getByText('お弁当を食べます').click();
+		await page
+			.locator('[data-testid="multiple-choice-container"]')
+			.first()
+			.getByText('七時')
+			.click();
+		await page
+			.locator('[data-testid="multiple-choice-container"]')
+			.nth(1)
+			.getByText('電車で')
+			.click();
+		await page
+			.locator('[data-testid="multiple-choice-container"]')
+			.nth(2)
+			.getByText('お弁当を食べます')
+			.click();
 		await page.getByText('答えを確認').click();
 
 		// Go back to home
@@ -177,7 +211,9 @@ test.describe('Japanese Reading Practice App - Integration Tests', () => {
 
 		// Should show error message
 		await expect(page.getByText('コレクションが見つかりません')).toBeVisible();
-		await expect(page.getByText('指定されたコレクション「non-existent-collection」は存在しません')).toBeVisible();
+		await expect(
+			page.getByText('指定されたコレクション「non-existent-collection」は存在しません')
+		).toBeVisible();
 
 		// Should have back button
 		const backButton = page.getByText('ホームに戻る');

@@ -4,14 +4,14 @@ import type { Question, UserAnswer, ExerciseCompletion } from '$lib/types';
 // Helper functions for answering logic that would be used in components
 export function calculateScore(questions: Question[], answers: UserAnswer[]): number {
 	let correctCount = 0;
-	
+
 	for (const question of questions) {
-		const userAnswer = answers.find(a => a.questionId === question.id);
+		const userAnswer = answers.find((a) => a.questionId === question.id);
 		if (userAnswer && userAnswer.isCorrect) {
 			correctCount++;
 		}
 	}
-	
+
 	return correctCount;
 }
 
@@ -20,9 +20,9 @@ export function isAnswerCorrect(question: Question, selectedAnswer: number): boo
 }
 
 export function createUserAnswer(
-	exerciseId: string, 
-	questionId: string, 
-	selectedAnswer: number, 
+	exerciseId: string,
+	questionId: string,
+	selectedAnswer: number,
 	question: Question
 ): UserAnswer {
 	return {
@@ -40,7 +40,7 @@ export function createExerciseCompletion(
 ): ExerciseCompletion {
 	const score = calculateScore(questions, answers);
 	const totalQuestions = questions.length;
-	
+
 	return {
 		exerciseId,
 		completed: score === totalQuestions,
@@ -50,12 +50,12 @@ export function createExerciseCompletion(
 }
 
 export function getAnsweredQuestionIds(answers: UserAnswer[]): string[] {
-	return answers.map(a => a.questionId);
+	return answers.map((a) => a.questionId);
 }
 
 export function areAllQuestionsAnswered(questions: Question[], answers: UserAnswer[]): boolean {
 	const answeredQuestionIds = new Set(getAnsweredQuestionIds(answers));
-	return questions.every(q => answeredQuestionIds.has(q.id));
+	return questions.every((q) => answeredQuestionIds.has(q.id));
 }
 
 export function getPercentageScore(score: number, total: number): number {
@@ -103,7 +103,7 @@ describe('Answering Logic Helpers', () => {
 	describe('createUserAnswer', () => {
 		it('should create correct user answer for correct selection', () => {
 			const userAnswer = createUserAnswer('exercise-1', 'q1', 1, mockQuestions[0]);
-			
+
 			expect(userAnswer).toEqual({
 				exerciseId: 'exercise-1',
 				questionId: 'q1',
@@ -114,7 +114,7 @@ describe('Answering Logic Helpers', () => {
 
 		it('should create correct user answer for incorrect selection', () => {
 			const userAnswer = createUserAnswer('exercise-1', 'q1', 0, mockQuestions[0]);
-			
+
 			expect(userAnswer).toEqual({
 				exerciseId: 'exercise-1',
 				questionId: 'q1',
@@ -178,7 +178,7 @@ describe('Answering Logic Helpers', () => {
 			];
 
 			const completion = createExerciseCompletion('exercise-1', mockQuestions, answers);
-			
+
 			expect(completion).toEqual({
 				exerciseId: 'exercise-1',
 				completed: true,
@@ -195,7 +195,7 @@ describe('Answering Logic Helpers', () => {
 			];
 
 			const completion = createExerciseCompletion('exercise-1', mockQuestions, answers);
-			
+
 			expect(completion).toEqual({
 				exerciseId: 'exercise-1',
 				completed: false,

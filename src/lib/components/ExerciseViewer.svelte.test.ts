@@ -39,7 +39,7 @@ describe('ExerciseViewer Component', () => {
 
 	beforeEach(() => {
 		vi.clearAllMocks();
-		
+
 		// Setup default mock implementation for subscribe
 		mockProgressStore.subscribe.mockImplementation((callback) => {
 			callback({
@@ -58,14 +58,14 @@ describe('ExerciseViewer Component', () => {
 
 		// Check title
 		await expect.element(page.getByText('テストエクササイズ')).toBeInTheDocument();
-		
+
 		// Check question count
 		await expect.element(page.getByText('問題数: 2')).toBeInTheDocument();
-		
+
 		// Check reading text content (HTML should be rendered)
 		await expect.element(page.getByText('これはテストの読み物です。')).toBeInTheDocument();
 		await expect.element(page.getByText('二番目の段落です。')).toBeInTheDocument();
-		
+
 		// Check section headers
 		await expect.element(page.getByText('読み物')).toBeInTheDocument();
 		await expect.element(page.getByText('問題')).toBeInTheDocument();
@@ -79,7 +79,7 @@ describe('ExerciseViewer Component', () => {
 		// Check question labels
 		await expect.element(page.getByText('問題 1')).toBeInTheDocument();
 		await expect.element(page.getByText('問題 2')).toBeInTheDocument();
-		
+
 		// Check question content
 		await expect.element(page.getByText('第一の質問ですか？')).toBeInTheDocument();
 		await expect.element(page.getByText('第二の質問ですか？')).toBeInTheDocument();
@@ -101,8 +101,8 @@ describe('ExerciseViewer Component', () => {
 
 		// Answer first question
 		await page.getByTestId('multiple-choice-container').first().getByText('はい').click();
-		
-		// Answer second question  
+
+		// Answer second question
 		await page.getByTestId('multiple-choice-container').nth(1).getByText('B').click();
 
 		// Submit button should be enabled
@@ -126,10 +126,10 @@ describe('ExerciseViewer Component', () => {
 		await expect.element(page.getByText('結果')).toBeInTheDocument();
 		await expect.element(page.getByText('2 / 2')).toBeInTheDocument();
 		await expect.element(page.getByText('完璧です！')).toBeInTheDocument();
-		
+
 		// Should show retry button
 		await expect.element(page.getByText('もう一度挑戦')).toBeInTheDocument();
-		
+
 		// Submit button should be hidden
 		await expect.element(page.getByText('答えを確認')).not.toBeVisible();
 	});

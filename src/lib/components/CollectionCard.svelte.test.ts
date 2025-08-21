@@ -69,7 +69,7 @@ describe('CollectionCard Component', () => {
 	it('should display correct level badge colors', async () => {
 		const beginnerCollection = { ...mockCollection, level: '初級' };
 		render(CollectionCard, { collection: beginnerCollection });
-		
+
 		const levelBadge = page.getByText('初級');
 		await expect.element(levelBadge).toHaveClass(/bg-green-100/);
 		await expect.element(levelBadge).toHaveClass(/text-green-800/);
@@ -86,7 +86,7 @@ describe('CollectionCard Component', () => {
 
 	it('should handle click events', async () => {
 		const onCollectionSelect = vi.fn();
-		
+
 		render(CollectionCard, {
 			collection: mockCollection,
 			onCollectionSelect
@@ -100,7 +100,7 @@ describe('CollectionCard Component', () => {
 
 	it('should be keyboard accessible', async () => {
 		const onCollectionSelect = vi.fn();
-		
+
 		render(CollectionCard, {
 			collection: mockCollection,
 			onCollectionSelect
@@ -124,7 +124,7 @@ describe('CollectionCard Component', () => {
 		it('should use correct colors for 中級', async () => {
 			const intermediateCollection = { ...mockCollection, level: '中級' };
 			render(CollectionCard, { collection: intermediateCollection });
-			
+
 			const levelBadge = page.getByText('中級');
 			await expect.element(levelBadge).toHaveClass(/bg-yellow-100/);
 			await expect.element(levelBadge).toHaveClass(/text-yellow-800/);
@@ -133,7 +133,7 @@ describe('CollectionCard Component', () => {
 		it('should use correct colors for 上級', async () => {
 			const advancedCollection = { ...mockCollection, level: '上級' };
 			render(CollectionCard, { collection: advancedCollection });
-			
+
 			const levelBadge = page.getByText('上級');
 			await expect.element(levelBadge).toHaveClass(/bg-red-100/);
 			await expect.element(levelBadge).toHaveClass(/text-red-800/);
@@ -142,7 +142,7 @@ describe('CollectionCard Component', () => {
 		it('should use default colors for unknown level', async () => {
 			const unknownCollection = { ...mockCollection, level: '不明' };
 			render(CollectionCard, { collection: unknownCollection });
-			
+
 			const levelBadge = page.getByText('不明');
 			await expect.element(levelBadge).toHaveClass(/bg-gray-100/);
 			await expect.element(levelBadge).toHaveClass(/text-gray-800/);

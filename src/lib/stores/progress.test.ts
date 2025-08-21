@@ -36,11 +36,11 @@ describe('Progress Store', () => {
 				completions: [],
 				collections: []
 			};
-			
+
 			mockStorage.setItem('jp-tutoring-progress', JSON.stringify(initialData));
 			const newStore = createProgressStore(mockStorage);
 			const state = get(newStore);
-			
+
 			expect(state).toEqual(initialData);
 		});
 	});
@@ -94,7 +94,7 @@ describe('Progress Store', () => {
 
 			progressStore.saveAnswer(answer);
 			const storedData = JSON.parse(mockStorage.getItem('jp-tutoring-progress') || '{}');
-			
+
 			expect(storedData.answers).toHaveLength(1);
 			expect(storedData.answers[0]).toEqual(answer);
 		});
@@ -191,14 +191,14 @@ describe('Progress Store', () => {
 				}
 			];
 
-			answers.forEach(answer => progressStore.saveAnswer(answer));
-			completions.forEach(completion => progressStore.completeExercise(completion));
+			answers.forEach((answer) => progressStore.saveAnswer(answer));
+			completions.forEach((completion) => progressStore.completeExercise(completion));
 		});
 
 		it('should get exercise answers correctly', () => {
 			const answers = progressStore.getExerciseAnswers('daily-life-1');
 			expect(answers).toHaveLength(2);
-			expect(answers.every(a => a.exerciseId === 'daily-life-1')).toBe(true);
+			expect(answers.every((a) => a.exerciseId === 'daily-life-1')).toBe(true);
 		});
 
 		it('should check if exercise is completed correctly', () => {
