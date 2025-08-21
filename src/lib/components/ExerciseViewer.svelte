@@ -114,10 +114,18 @@
 	function handleScroll() {
 		if (readingTextElement) {
 			const rect = readingTextElement.getBoundingClientRect();
-			isTextVisible = rect.bottom > 100; // Consider visible if bottom is more than 100px from top
+			isTextVisible = rect.bottom > 150; // Consider visible if bottom is more than 150px from top
 			
 			// Show sticky popup only when text is not visible and questions are being answered
 			showStickyPopup = !isTextVisible && !stickyPopupHidden;
+			
+			// Debug logging (remove later)
+			console.log('Scroll debug:', { 
+				rectBottom: rect.bottom, 
+				isTextVisible, 
+				showStickyPopup, 
+				stickyPopupHidden 
+			});
 		}
 	}
 
@@ -136,23 +144,24 @@
 
 <svelte:window onscroll={handleScroll} />
 
-<!-- Sticky Text Popup -->
+<!-- Sticky Text Popup (Fixed positioning outside main content) -->
 {#if showStickyPopup}
-	<div class="sticky top-[73px] z-50 bg-white border-b border-gray-200 shadow-lg">
+	<div class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-lg pt-6">
 		<div class="max-w-4xl mx-auto p-4">
 			<div class="flex items-start justify-between">
 				<div class="flex-1 mr-4">
-					<h3 class="text-sm font-semibold text-gray-900 mb-2">読み物 (スクロール表示)</h3>
-					<div class="prose prose-sm text-gray-700 max-h-32 overflow-y-auto">
+					<h3 class="text-sm font-semibold text-gray-900 mb-2">📖 読み物 (参考用)</h3>
+					<div class="prose prose-sm text-gray-700 max-h-40 overflow-y-auto bg-gray-50 rounded p-3 border">
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 						{@html exercise.readingText}
 					</div>
 				</div>
 				<div class="flex flex-col gap-2">
 					<button
-						class="p-1 text-gray-400 hover:text-gray-600 rounded"
+						class="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors"
 						onclick={hideStickyPopup}
 						aria-label="ポップアップを隠す"
+						title="文章を隠す"
 					>
 						<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
 							<path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -167,9 +176,10 @@
 <!-- Show Sticky Popup Button (when hidden) -->
 {#if !isTextVisible && stickyPopupHidden}
 	<button
-		class="fixed top-20 right-4 z-40 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors"
+		class="fixed top-4 right-4 z-40 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors"
 		onclick={showStickyPopupAgain}
 		aria-label="読み物を表示"
+		title="読み物を表示"
 	>
 		<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
 			<path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h8V4H6z" clip-rule="evenodd" />
